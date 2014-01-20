@@ -1,5 +1,5 @@
-mate-window-manager (1.6.2-1) UNRELEASED; urgency=low
+marco (1.6.2-1) UNRELEASED; urgency=low
 
-  * Initial release.
+  * Initial release. (Closes: #728493).
 
  -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 25 Oct 2013 15:17:18 +0200
