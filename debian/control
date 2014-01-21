@@ -93,6 +93,7 @@ Description: library for marco window manager
 
 Package: libmarco-private0-dbg
 Section: debug
+Priority: extra
 Architecture: any
 Multi-Arch: same
 Depends: ${misc:Depends},
