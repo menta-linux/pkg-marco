@@ -1,5 +1,5 @@
-marco (1.6.2-1) UNRELEASED; urgency=low
+marco (1.6.2-1) unstable; urgency=low
 
   * Initial release. (Closes: #728493).
 
- -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 25 Oct 2013 15:17:18 +0200
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 21 Jan 2014 19:52:39 +0100
