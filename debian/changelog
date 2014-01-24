@@ -1,7 +1,7 @@
 marco (1.6.2-2) UNRELEASED; urgency=low
 
   * debian/watch:
-    + Watch for marco-<version>.tar.gz tarballs, as well. Not only
+    + Watch for marco-<version>.tar.xz tarballs, as well. Not only
       for tarballs of mate-window-manager (which is the old name for
       marco tarballs).
 
