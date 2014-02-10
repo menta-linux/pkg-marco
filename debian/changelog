@@ -1,3 +1,10 @@
+marco (1.6.2-2) UNRELEASED; urgency=low
+
+  * debian/copyright:
+    + Fix license for config.guess and config.sub.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 10 Feb 2014 15:26:30 +0100
+
 marco (1.6.2-1) unstable; urgency=low
 
   * Initial release. (Closes: #728493).
