@@ -1,12 +1,14 @@
 #!/usr/bin/make -f
 
 %:
-	dh $@ --with autoreconf
+	dh $@
 
 override_dh_install:
 	dh_install --list-missing
 
 override_dh_auto_configure:
+	# upstream tarball is without configure. autogen.sh will create it
+	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure -- \
 		--localstatedir=/var \
 		--libexecdir=/usr/lib/mate-window-manager \
