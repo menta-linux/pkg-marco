@@ -26,8 +26,7 @@ Build-Depends: debhelper (>= 9),
                libxrandr-dev,
                libsm-dev,
                libice-dev,
-               mate-doc-utils,
-               mate-doc-utils-gnome | gnome-doc-utils,
+               yelp-tools,
                mate-dialogs,
 Standards-Version: 3.9.5
 Homepage: http://www.mate-desktop.org/
