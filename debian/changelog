@@ -1,4 +1,4 @@
-marco (1.8.0+dfsg1-1) UNRELEASED; urgency=low
+marco (1.8.0+dfsg1-1) unstable; urgency=low
 
   * New upstream release.
   * Repack upstream tarball and omit non-DFSG (GFDL-1.1) files
@@ -26,7 +26,7 @@ marco (1.8.0+dfsg1-1) UNRELEASED; urgency=low
     + Drop unused overrides.
     + Add override for shlib-calls-exit in bin:package libmarco-private0.
 
- -- Mike Gabriel <sunweaver@debian.org>  Tue, 11 Mar 2014 17:48:28 +0100
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 11 Mar 2014 20:38:14 +0100
 
 marco (1.6.2-1) unstable; urgency=low
 
