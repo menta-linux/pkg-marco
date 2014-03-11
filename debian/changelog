@@ -1,6 +1,30 @@
 marco (1.8.0+dfsg1-1) UNRELEASED; urgency=low
 
   * New upstream release.
+  * Repack upstream tarball and omit non-DFSG (GFDL-1.1) files
+    (creating themes documentation).
+  * debian/watch:
+    + Use tagged CGit tarball snapshots as upstream source.
+    + Mangle Debian package version.
+  * debian/copyright:
+    + Adapt to files in new (repacked) upstream tarball.
+  * debian/rules:
+    + Build package using autogen.sh.
+  * debian/control:
+    + Add B-D: yelp-tools.
+    + Drop B-D: mate-doc-utils, mate-doc-utils-gnome.
+  * debian/patches:
+    + Drop patch 1001_hypen-used-as-minus-sign-on-man-page.patch. Fixed
+      upstream.
+    + Add patch 2001_omit-gfdl-licensed-theme-documentation.patch. Don't build
+      GFDL-1.1 licensed files that got removed from the repacked tarball.
+  * debian/marco-common.install: 
+    + Marco's arch-indep files now reside in /usr/share/marco (not
+      /usr/share/mate-window-manager).
+    + Install gsettings conversion map into bin:package marco-common.
+  * lintian:
+    + Drop unused overrides.
+    + Add override for shlib-calls-exit in bin:package libmarco-private0.
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 11 Mar 2014 17:48:28 +0100
 
