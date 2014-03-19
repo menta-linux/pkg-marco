@@ -9,6 +9,7 @@ marco (1.8.0+dfsg1-2) UNRELEASED; urgency=low
   * debian/patches:
     + Add patch 0001_use-zenity-instead-of-mate-dialogs.patch. Use zenity
       instead of mate-dialogs. (Closes: #742011).
+    + Fix upstream flaw in 0001_use-zenity-instead-of-mate-dialogs.patch.
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 13 Mar 2014 16:18:29 +0100
 
