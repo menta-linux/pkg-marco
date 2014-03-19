@@ -2,6 +2,10 @@ marco (1.8.0+dfsg1-2) UNRELEASED; urgency=low
 
   * debian/copyright:
     + Point to git.mate-desktop.org in Source: field.
+  * debian/control:
+    + Drop B-D: mate-dialogs.
+    + Add B-D: zenity.
+    + Also add zenity as dependency to bin:package marco.
   * debian/patches:
     + Add patch 0001_use-zenity-instead-of-mate-dialogs.patch. Use zenity
       instead of mate-dialogs. (Closes: #742011).
