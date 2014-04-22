@@ -1,3 +1,15 @@
+marco (1.8.0+dfsg1-3) unstable; urgency=low
+
+  * debian/patches:
+    + Add 0002_gtk3-frame-extents-with-marco.patch. Tell GTK3 that marco
+      supports _GTK_FRAME_EXTENTS hints.
+  * debian/rules:
+    + Enable parallel builds.
+    + Turn on compiler commands during package build (configure option:
+      --disable-silent-rules).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 22 Apr 2014 17:22:25 +0200
+
 marco (1.8.0+dfsg1-2) unstable; urgency=low
 
   * debian/copyright:
