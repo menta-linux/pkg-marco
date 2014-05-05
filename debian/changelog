@@ -1,3 +1,13 @@
+marco (1.8.0+dfsg1-4) unstable; urgency=low
+
+  * debian/rules:
+    + Fix copy+paste error in tarball repacking code.
+  * postinst/prerm:
+    + Register marco as x-window-manager with Debian's alternatives system.
+      (Closes: #746781).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 05 May 2014 14:37:06 +0200
+
 marco (1.8.0+dfsg1-3) unstable; urgency=low
 
   * debian/patches:
