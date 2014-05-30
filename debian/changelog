@@ -1,3 +1,18 @@
+marco (1.8.0+dfsg1-5) unstable; urgency=medium
+
+  [ Vangelis Mouhtsis ]
+  * debian/rules:
+    + Replace on dh_install --list-missing -> --fail-missing.
+    + Remove non-packaged *.la files after build.
+
+  [ Mike Gabriel ]
+  * debian/marco.prerm:
+    + Fix severe copy+paste flaw. We need to remove an alternative for
+      x-window-manager (not x-session-manager) and we remove marco (not
+      mate-session). (Closes: #749593).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 30 May 2014 11:46:58 +0200
+
 marco (1.8.0+dfsg1-4) unstable; urgency=low
 
   * debian/rules:
