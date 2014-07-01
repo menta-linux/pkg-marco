@@ -1,3 +1,9 @@
+marco (1.8.1+dfsg1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 01 Jul 2014 19:00:07 +0200
+
 marco (1.8.0+dfsg1-5) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
