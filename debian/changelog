@@ -1,8 +1,13 @@
-marco (1.8.2+dfsg1-1) UNRELEASED; urgency=medium
+marco (1.8.2+dfsg1-1) unstable; urgency=medium
 
   * New upstream release.
+  * debian/patches:
+    + Drop 0002_gtk3-frame-extents-with-marco.patch. It was picked from
+      upstream and is included in latest release.
+  * debian/copyriht:
+    + Update to match files in latest upstream release.
 
- -- Mike Gabriel <sunweaver@debian.org>  Mon, 06 Oct 2014 23:34:31 +0200
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 06 Oct 2014 23:48:21 +0200
 
 marco (1.8.1+dfsg1-1) unstable; urgency=medium
 
