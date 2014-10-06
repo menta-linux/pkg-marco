@@ -11,6 +11,7 @@ Files: src/core/eventqueue.h
        src/core/place.h
        src/core/session.h
        src/include/errors.h
+       src/include/main.h
        src/include/resizepopup.h
        src/include/ui.h
        src/include/xprops.h
@@ -257,6 +258,7 @@ Copyright: 2002, Sun Microsystems, Inc.
 License: GPL-2+
 
 Files: src/include/all-keybindings.h
+       src/core/schema-bindings.c
 Copyright: 2008, Thomas Thurman
 License: GPL-2+
 
@@ -312,7 +314,14 @@ License: GPL-2+
 Comment:
  Using license from COPYING file.
 
+Files: src/include/tile-preview.h
+       src/ui/tile-preview.c
+Copyright: 2010, Florian Müllner
+License: GPL-2+
+
 Files: po/*.po
+       po/ChangeLog
+       po/gnome-copyrights.txt
 Copyright: THE PACKAGE's COPYRIGHT HOLDERS
            2001-2010, Free Software Foundation, Inc.
            2006-2007, Rosetta Contributors and Canonical Ltd.
@@ -326,11 +335,11 @@ License: GPL-2+
 Comment:
  Using license from COPYING file.
 
-Files: doc/man/Makefile.am
+Files: .tx/config
+       doc/man/Makefile.am
        doc/man/*.1
        doc/Makefile.am
        doc/*.txt
-       po/Makefile.am
        po/LINGUAS
        po/POTFILES.in
        po/POTFILES.skip
@@ -346,10 +355,15 @@ Files: doc/man/Makefile.am
        src/*.pc.in
        src/*.convert
        src/*.desktop.in
-       src/*.desktop
        src/*.gschema.xml
        src/tools/*.png
+       AUTHORS
+       COPYING
+       ChangeLog
+       HACKING
        Makefile.am
+       NEWS
+       README
        autogen.sh
        configure.ac
        rationales.txt
