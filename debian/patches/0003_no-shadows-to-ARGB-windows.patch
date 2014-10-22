@@ -1,0 +1,26 @@
+From a85010e3060ac3852a16afb8803102d5c1702758 Mon Sep 17 00:00:00 2001
+From: Martin Wimpress <code@flexion.org>
+Date: Tue, 21 Oct 2014 16:32:10 +0100
+Subject: [PATCH] compositor-xrender: don't add shadows to ARGB windows
+
+---
+ src/compositor/compositor-xrender.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/src/compositor/compositor-xrender.c b/src/compositor/compositor-xrender.c
+index 6294e9d..2eff883 100644
+--- a/src/compositor/compositor-xrender.c
++++ b/src/compositor/compositor-xrender.c
+@@ -911,6 +911,12 @@ window_has_shadow (MetaCompWindow *cw)
+       }
+     }
+ 
++  /* Do not add shadows to ARGB windows */
++  if (cw->mode == WINDOW_ARGB) {
++    meta_verbose ("Window has no shadow as it is ARGB\n");
++    return FALSE;
++  }
++
+   /* Never put a shadow around shaped windows */
+   if (cw->shaped) {
+     meta_verbose ("Window has no shadow as it is shaped\n");

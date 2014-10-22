@@ -1,3 +1,4 @@
 0001_use-zenity-instead-of-mate-dialogs.patch
 0002_update-keybindings-files-with-new-name.patch
+0003_no-shadows-to-ARGB-windows.patch
 2001_omit-gfdl-licensed-theme-documentation.patch
