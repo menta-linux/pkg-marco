@@ -1,3 +1,12 @@
+marco (1.8.2+dfsg1-3) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 0004_dont-switch-workspace-when-switching-to-sticky-window.patch.
+      Don't switch workspace when switching to sticky windows. (Closes:
+      #766428).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 24 Oct 2014 12:28:38 +0200
+
 marco (1.8.2+dfsg1-2) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
