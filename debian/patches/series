@@ -2,4 +2,5 @@
 0002_update-keybindings-files-with-new-name.patch
 0003_no-shadows-to-ARGB-windows.patch
 0004_dont-switch-workspace-when-switching-to-sticky-window.patch
+0005_fix-resizing-csd-windows.patch
 2001_omit-gfdl-licensed-theme-documentation.patch
