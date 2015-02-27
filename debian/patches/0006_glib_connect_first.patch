@@ -1,0 +1,43 @@
+From f56a1ba0abceaba79efa55120a9e706768809cb4 Mon Sep 17 00:00:00 2001
+From: Monsta <monsta@inbox.ru>
+Date: Wed, 18 Feb 2015 15:49:09 +0300
+Subject: [PATCH] prefs: first connect to settings, then read them.
+
+fixes the issue with GLib >= 2.43,
+https://git.gnome.org/browse/glib/commit/?id=8ff5668a458344da22d30491e3ce726d861b3619
+---
+ src/core/prefs.c | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+
+diff --git a/src/core/prefs.c b/src/core/prefs.c
+index 5f46b55..7f747a2 100644
+--- a/src/core/prefs.c
++++ b/src/core/prefs.c
+@@ -888,13 +888,6 @@ meta_prefs_init (void)
+   g_hash_table_insert (settings_schemas, KEY_MATE_TERMINAL_SCHEMA, settings_mate_terminal);
+   g_hash_table_insert (settings_schemas, KEY_MATE_MOUSE_SCHEMA, settings_mate_mouse);
+ 
+-  /* Pick up initial values. */
+-
+-  handle_preference_init_enum ();
+-  handle_preference_init_bool ();
+-  handle_preference_init_string ();
+-  handle_preference_init_int ();
+-
+   g_signal_connect (settings_general, "changed", G_CALLBACK (change_notify), NULL);
+   g_signal_connect (settings_command, "changed", G_CALLBACK (change_notify), NULL);
+   g_signal_connect (settings_screen_bindings, "changed", G_CALLBACK (change_notify), NULL);
+@@ -907,6 +900,13 @@ meta_prefs_init (void)
+   g_signal_connect (settings_mate_mouse, "changed::" KEY_MATE_MOUSE_CURSOR_THEME, G_CALLBACK (change_notify), NULL);
+   g_signal_connect (settings_mate_mouse, "changed::" KEY_MATE_MOUSE_CURSOR_SIZE, G_CALLBACK (change_notify), NULL);
+ 
++  /* Pick up initial values. */
++
++  handle_preference_init_enum ();
++  handle_preference_init_bool ();
++  handle_preference_init_string ();
++  handle_preference_init_int ();
++
+   init_bindings ();
+   init_commands ();
+   init_workspace_names ();
