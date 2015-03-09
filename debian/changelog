@@ -1,10 +1,16 @@
-marco (1.8.3+dfsg1-1) UNRELEASED; urgency=medium
+marco (1.8.3+dfsg1-1) experimental; urgency=medium
 
   * New upstream release.
     - Including GLib >= 2.43 compatibility patch. (Closes: #778694,
       LP:#1426327).
+  * debian/patches:
+    + Drop 0001_use-zenity-instead-of-mate-dialogs.patch. 
+    + Drop 0002_update-keybindings-files-with-new-name.patch.
+    + Drop 0003_no-shadows-to-ARGB-windows.patch.
+    + Drop 0005_fix-resizing-csd-windows.patch.
+    + -> Above named patches included in this upstream release.
 
- -- Mike Gabriel <sunweaver@debian.org>  Mon, 09 Mar 2015 13:27:50 +0100
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 09 Mar 2015 13:48:40 +0100
 
 marco (1.8.2+dfsg1-6) unstable; urgency=medium
 
