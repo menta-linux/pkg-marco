@@ -1,3 +1,12 @@
+marco (1.8.2+dfsg1-6) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 0007_correct-name-for-missing-icon-in-preview-widget.patch. Also use
+      correct image name for missing icons in the preview widget. (Closes:
+      #780104). Follow-up fix for #778824.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 09 Mar 2015 12:02:55 +0100
+
 marco (1.8.2+dfsg1-5) unstable; urgency=medium
 
   * debian/patches:
