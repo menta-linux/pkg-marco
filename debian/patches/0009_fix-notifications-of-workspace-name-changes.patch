@@ -1,0 +1,25 @@
+From babfc4b2dd4590fb7f0a7a62b794ec1c32a55e0a Mon Sep 17 00:00:00 2001
+From: monsta <monsta@inbox.ru>
+Date: Wed, 8 Apr 2015 13:30:02 +0300
+Subject: [PATCH] prefs: make workspace name actually change
+
+now workspace names actually change on-the-fly when you change them in dconf-editor.
+and this works with GLib 2.43 as well.
+---
+ src/core/prefs.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/core/prefs.c b/src/core/prefs.c
+index 7f747a2..9a4c659 100644
+--- a/src/core/prefs.c
++++ b/src/core/prefs.c
+@@ -974,7 +974,7 @@ change_notify (GSettings *settings,
+       
+       g_free(str);
+     }
+-  else if (g_strcmp0 (schema_name, KEY_WORKSPACE_NAME_SCHEMA))
++  else if (g_strcmp0 (schema_name, KEY_WORKSPACE_NAME_SCHEMA) == 0)
+     {
+       gchar *str;
+         str = g_settings_get_string (settings, key);
+
