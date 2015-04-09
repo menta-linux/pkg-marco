@@ -2,7 +2,7 @@ marco (1.8.3+dfsg1-3) experimental; urgency=medium
 
   * debian/patches:
     + Add 0009_fix-notifications-of-workspace-name-changes.patch. Make
-      notifications of workspace name changes reach marco on-th-fly.
+      notifications of workspace name changes reach marco on-the-fly.
       (Closes: #782194).
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 09 Apr 2015 12:37:45 +0200
