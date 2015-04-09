@@ -1,3 +1,12 @@
+marco (1.8.3+dfsg1-2) experimental; urgency=medium
+
+  * debian/patches:
+    + Add 0008_glib243-keybindings-notifications-fix.patch. Make notifications
+      of keybindings changes reach marco with GLib >= 2.43. (Closes: #782189,
+      LP:#1426327).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 09 Apr 2015 11:12:11 +0200
+
 marco (1.8.3+dfsg1-1) experimental; urgency=medium
 
   * New upstream release.
