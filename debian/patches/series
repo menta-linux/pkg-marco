@@ -1,4 +1,5 @@
 0004_dont-switch-workspace-when-switching-to-sticky-window.patch
 0006_correct-name-for-missing-icon.patch
 0007_correct-name-for-missing-icon-in-preview-widget.patch
+0008_glib243-keybindings-notifications-fix.patch
 2001_omit-gfdl-licensed-theme-documentation.patch

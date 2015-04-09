@@ -1,0 +1,106 @@
+From 401d1e249bef56722973a18964ea6d2f3eebe9fe Mon Sep 17 00:00:00 2001
+From: Monsta <monsta@inbox.ru>
+Date: Thu, 9 Apr 2015 11:10:02 +0300
+Subject: [PATCH] prefs: make keybindings change notifications work with GLib
+ >= 2.43
+
+this is achieved by using the same GSettings instance for listening
+and reading data. it's an additional fix for the issue with GLib >= 2.43,
+https://git.gnome.org/browse/glib/commit/?id=8ff5668a458344da22d30491e3ce726d861b3619
+---
+ src/core/prefs.c | 45 +++++++++++++++++++++++++--------------------
+ 1 file changed, 25 insertions(+), 20 deletions(-)
+
+diff --git a/src/core/prefs.c b/src/core/prefs.c
+index 7f747a2..07483f7 100644
+--- a/src/core/prefs.c
++++ b/src/core/prefs.c
+@@ -160,7 +160,9 @@ static void button_layout_handler (MetaPreference, const gchar*, gboolean*);
+ static gboolean update_binding            (MetaKeyPref *binding,
+                                            gchar  *value);
+ 
+-static void     init_bindings             (void);
++static void     init_bindings             (GSettings *);
++static void     init_screen_bindings      (void);
++static void     init_window_bindings      (void);
+ static void     init_commands             (void);
+ static void     init_workspace_names      (void);
+ 
+@@ -907,7 +909,8 @@ meta_prefs_init (void)
+   handle_preference_init_string ();
+   handle_preference_init_int ();
+ 
+-  init_bindings ();
++  init_screen_bindings ();
++  init_window_bindings ();
+   init_commands ();
+   init_workspace_names ();
+ }
+@@ -1584,32 +1587,32 @@ static MetaKeyPref key_bindings[] = {
+ #undef keybind
+ 
+ static void
+-init_bindings (void)
++init_bindings (GSettings *settings)
+ {
+-  const char *prefix[] = {
+-    KEY_WINDOW_BINDINGS_SCHEMA,
+-    KEY_SCREEN_BINDINGS_SCHEMA,
+-    NULL
+-  };
+-  int i;
+   gchar **list = NULL;
+   gchar *str_val = NULL;
+-  GSettings *bindings_settings = NULL;
+ 
+-  for (i = 0; prefix[i]; i++)
++  list = g_settings_list_keys (settings);
++  while (*list != NULL)
+     {
+-      bindings_settings = g_settings_new (prefix [i]);
+-      list = g_settings_list_keys (bindings_settings);
+-      while (*list != NULL)
+-        {
+-          str_val = g_settings_get_string (bindings_settings, *list);
+-          update_key_binding (*list, str_val);
+-          list++;
+-        }
++      str_val = g_settings_get_string (settings, *list);
++      update_key_binding (*list, str_val);
++      list++;
+     }
++
+   g_free (str_val);
+-  g_object_unref (bindings_settings);
++}
+ 
++static void
++init_screen_bindings (void)
++{
++  init_bindings (settings_screen_bindings);
++}
++
++static void
++init_window_bindings (void)
++{
++  init_bindings (settings_window_bindings);
+ }
+ 
+ static void
+@@ -1625,6 +1628,7 @@ init_commands (void)
+       update_command (*list, str_val);
+       list++;
+     }
++
+   g_free (str_val);
+ }
+ 
+@@ -1641,6 +1645,7 @@ init_workspace_names (void)
+       update_workspace_name (*list, str_val);
+       list++;
+     }
++
+   g_free (str_val);
+ }
+ 
+
