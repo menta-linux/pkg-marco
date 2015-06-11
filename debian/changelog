@@ -1,9 +1,14 @@
-marco (1.10.0-1+dfsg1-1) UNRELEASED; urgency=low
+marco (1.10.0+dfsg1-1) UNRELEASED; urgency=low
 
   * New upstream release.
   * debian/patches:
     + Drop 0004_dont-switch-workspace-when-switching-to-sticky-window.patch.
     Applied upstream.
+    + Drop 0006_correct-name-for-missing-icon.patch. Applied upstream.
+    + Drop 0007_correct-name-for-missing-icon-in-preview-widget.patch.
+    Applied upstream.
+    + Drop 0009_fix-notifications-of-workspace-name-changes.patch. Applied
+    upstream.
   * debian/rules:
     + Remove obsolete --disable-scrollkeeper
     + Add --with-gtk=2.0
