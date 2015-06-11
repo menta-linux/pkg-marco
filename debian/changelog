@@ -1,3 +1,15 @@
+marco (1.10.0-1+dfsg1-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+  * debian/patches:
+    + Drop 0004_dont-switch-workspace-when-switching-to-sticky-window.patch.
+    Applied upstream.
+  * debian/rules:
+    + Remove obsolete --disable-scrollkeeper
+    + Add --with-gtk=2.0
+
+ -- Martin Wimpress <martin@flexion.org>  Wed, 10 Jun 2015 05:09:47 +0100
+
 marco (1.8.3+dfsg1-4) unstable; urgency=medium
 
   * Re-upload to unstable.
