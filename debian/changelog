@@ -1,5 +1,6 @@
-marco (1.10.0+dfsg1-1) UNRELEASED; urgency=low
+marco (1.10.1+dfsg1-1~exp1) experimental; urgency=low
 
+  [ Martin Wimpress ]
   * New upstream release.
   * debian/patches:
     + Drop 0004_dont-switch-workspace-when-switching-to-sticky-window.patch.
@@ -13,7 +14,17 @@ marco (1.10.0+dfsg1-1) UNRELEASED; urgency=low
     + Remove obsolete --disable-scrollkeeper
     + Add --with-gtk=2.0
 
- -- Martin Wimpress <martin@flexion.org>  Wed, 10 Jun 2015 05:09:47 +0100
+  [ Mike Gabriel ]
+  * debian/control:
+    + Versioned D: mate-common (>= 1.10).
+  * debian/patches:
+    + Drop 0008_glib243-keybindings-notifications-fix.patch. Applied upsream.
+  * debian/rules:
+    + Create orig tarball in ../ instead of $(CURDIR).
+  * debian/copyright:
+    + Drop src/ui/themewidget.{c,h}, not present anymore.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 16 Jun 2015 04:28:53 +0200
 
 marco (1.8.3+dfsg1-4) unstable; urgency=medium
 
