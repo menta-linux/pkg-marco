@@ -1,3 +1,18 @@
+marco (1.10.1-1~exp2) UNRELEASED; urgency=low
+
+  * debian/patches/2001_omit-gfdl-licensed-theme-documentation.patch:
+    + Remove because Marco documentation is dfsg compliant.
+  * debian/marco-common.install:
+    + Add usr/share/help.
+  * debian/rules:
+    + Remove dfsg suffix.
+  * debian/watch:
+    + Remove dfsg suffix.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Martin Wimpress <code@flexion.org>  wed, 29 Jul 2015 16:16:16 +0100
+
 marco (1.10.1+dfsg1-1~exp1) experimental; urgency=low
 
   [ Martin Wimpress ]
@@ -203,7 +218,7 @@ marco (1.8.0+dfsg1-1) unstable; urgency=low
       upstream.
     + Add patch 2001_omit-gfdl-licensed-theme-documentation.patch. Don't build
       GFDL-1.1 licensed files that got removed from the repacked tarball.
-  * debian/marco-common.install: 
+  * debian/marco-common.install:
     + Marco's arch-indep files now reside in /usr/share/marco (not
       /usr/share/mate-window-manager).
     + Install gsettings conversion map into bin:package marco-common.
