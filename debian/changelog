@@ -1,3 +1,47 @@
+marco (1.10.2-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+  * debian/patches/2001_omit-gfdl-licensed-theme-documentation.patch:
+    + Remove because Marco documentation is DFSG compliant.
+  * debian/marco-common.install:
+    + Add usr/share/help.
+  * debian/rules:
+    + Remove +dfsg1 suffix.
+  * debian/watch:
+    + Remove +dfsg1 suffix.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Martin Wimpress <code@flexion.org>  wed, 29 Jul 2015 16:16:16 +0100
+
+marco (1.10.1+dfsg1-1~exp1) experimental; urgency=low
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Drop 0004_dont-switch-workspace-when-switching-to-sticky-window.patch.
+    Applied upstream.
+    + Drop 0006_correct-name-for-missing-icon.patch. Applied upstream.
+    + Drop 0007_correct-name-for-missing-icon-in-preview-widget.patch.
+    Applied upstream.
+    + Drop 0009_fix-notifications-of-workspace-name-changes.patch. Applied
+    upstream.
+  * debian/rules:
+    + Remove obsolete --disable-scrollkeeper
+    + Add --with-gtk=2.0
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Versioned D: mate-common (>= 1.10).
+  * debian/patches:
+    + Drop 0008_glib243-keybindings-notifications-fix.patch. Applied upsream.
+  * debian/rules:
+    + Create orig tarball in ../ instead of $(CURDIR).
+  * debian/copyright:
+    + Drop src/ui/themewidget.{c,h}, not present anymore.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 16 Jun 2015 04:28:53 +0200
+
 marco (1.8.3+dfsg1-4) unstable; urgency=medium
 
   * Re-upload to unstable.
@@ -175,7 +219,7 @@ marco (1.8.0+dfsg1-1) unstable; urgency=low
       upstream.
     + Add patch 2001_omit-gfdl-licensed-theme-documentation.patch. Don't build
       GFDL-1.1 licensed files that got removed from the repacked tarball.
-  * debian/marco-common.install: 
+  * debian/marco-common.install:
     + Marco's arch-indep files now reside in /usr/share/marco (not
       /usr/share/mate-window-manager).
     + Install gsettings conversion map into bin:package marco-common.
