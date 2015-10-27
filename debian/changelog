@@ -1,3 +1,9 @@
+marco (1.10.3-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <code@flexion.org>  Tue, 27 Oct 2015 10:08:21 +0000
+
 marco (1.10.2-1) unstable; urgency=low
 
   [ Martin Wimpress ]
