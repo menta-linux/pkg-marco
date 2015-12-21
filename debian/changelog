@@ -1,14 +1,16 @@
-marco (1.12.1-1) UNRELEASED; urgency=medium
+marco (1.12.1-1) unstable; urgency=medium
 
-  * New upstream release.
+  [ Martin Wimpress ]
+  * New upstream release. (LP:#1495313).
+  * debian/control:
+    + Versioned B-D: mate-common (>= 1.12).
+    + Add mate-desktop-common to marco Depends. (LP:#1473285).
 
- -- Martin Wimpress <code@flexion.org>  Mon, 09 Nov 2015 16:33:02 +0000
+  [ Mike Gabriel ]
+  * debian/marco-common.install:
+    + Avoid empty directory /usr/share/MateConf.
 
-marco (1.10.3-1) unstable; urgency=medium
-
-  * New upstream release. (Closes: LP: #1495313)
-
- -- Martin Wimpress <code@flexion.org>  Tue, 27 Oct 2015 10:08:21 +0000
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 21 Dec 2015 11:45:15 +0100
 
 marco (1.10.2-1) unstable; urgency=low
 
