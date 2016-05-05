@@ -39,7 +39,7 @@ Package: marco
 Architecture: any
 Depends: libmarco-private0 (= ${binary:Version}),
          marco-common (= ${source:Version}),
-         mate-desktop-common (>= 1.12),
+         mate-desktop-common (>= 1.14),
          zenity,
          ${misc:Depends},
          ${shlibs:Depends},
