@@ -27,7 +27,7 @@ Build-Depends: debhelper (>= 9),
                libxrandr-dev,
                libxrender-dev,
                libxt-dev,
-               mate-common (>= 1.12),
+               mate-common (>= 1.14),
                yelp-tools,
                zenity,
 Standards-Version: 3.9.6
