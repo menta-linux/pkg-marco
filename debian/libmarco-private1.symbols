@@ -1,4 +1,4 @@
-libmarco-private.so.0 libmarco-private0 #MINVER#
+libmarco-private.so.1 libmarco-private1 #MINVER#
  meta_alpha_gradient_spec_free@Base 1.6.2
  meta_alpha_gradient_spec_new@Base 1.6.2
  meta_bug@Base 1.6.2
@@ -77,6 +77,9 @@ libmarco-private.so.0 libmarco-private0 #MINVER#
  meta_gtk_shadow_to_string@Base 1.6.2
  meta_gtk_state_from_string@Base 1.6.2
  meta_gtk_state_to_string@Base 1.6.2
+#MISSING: 1.14.1-1# meta_gtk_state_to_string@Base 1.6.2
+ meta_gtk_style_get_dark_color@Base 1.14.1
+ meta_gtk_style_get_light_color@Base 1.14.1
  meta_gtk_widget_get_font_desc@Base 1.6.2
  meta_image_fill_type_from_string@Base 1.6.2
  meta_image_fill_type_to_string@Base 1.6.2

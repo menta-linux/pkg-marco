@@ -37,7 +37,7 @@ Vcs-Git: https://anonscm.debian.org/git/pkg-mate/marco.git
 
 Package: marco
 Architecture: any
-Depends: libmarco-private0 (= ${binary:Version}),
+Depends: libmarco-private1 (= ${binary:Version}),
          marco-common (= ${source:Version}),
          mate-desktop-common (>= 1.14),
          zenity,
@@ -76,7 +76,7 @@ Description: lightweight GTK+ window manager for MATE (debugging symbols)
  The debugging symbols are installed in /usr/lib/debug and will
  automatically be used by gdb.
 
-Package: libmarco-private0
+Package: libmarco-private1
 Section: libs
 Architecture: any
 Multi-Arch: same
@@ -84,7 +84,9 @@ Depends: ${misc:Depends},
          ${shlibs:Depends},
 Breaks: libmarco,
         mate-window-manager (<= 1.0.0-2),
+        libmarco-private0,
 Replaces: libmarco,
+          libmarco-private0,
 Provides: libmarco,
 Description: library for Marco window manager
  Marco is a small window manager, using GTK+ to do everything. It is
@@ -92,12 +94,12 @@ Description: library for Marco window manager
  .
  This package contains the library.
 
-Package: libmarco-private0-dbg
+Package: libmarco-private1-dbg
 Section: debug
 Priority: extra
 Architecture: any
 Multi-Arch: same
-Depends: libmarco-private0 (= ${binary:Version}),
+Depends: libmarco-private1 (= ${binary:Version}),
          ${misc:Depends},
 Breaks: marco-dbg (<= 1.6.2-1~),
 Replaces: marco-dbg (<= 1.6.2-1~),
@@ -114,7 +116,7 @@ Package: libmarco-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
-Depends: libmarco-private0 (= ${binary:Version}),
+Depends: libmarco-private1 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Breaks: mate-window-manager (<= 1.0.0-2),
