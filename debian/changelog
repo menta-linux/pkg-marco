@@ -1,3 +1,10 @@
+marco (1.14.2-2) unstable; urgency=medium
+
+  * dbgsym: Don't build dbg:packages anymore.
+    See https://wiki.debian.org/AutomaticDebugPackages.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 29 May 2016 01:34:45 +0200
+
 marco (1.14.2-1) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
