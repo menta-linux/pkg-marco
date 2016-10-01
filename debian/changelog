@@ -1,8 +1,17 @@
-marco (1.16.0-1) UNRELEASED; urgency=medium
+marco (1.16.0-1) unstable; urgency=medium
 
+  [ Martin Wimpress ]
   * New upstream release. (Closes: #838725).
 
- -- Martin Wimpress <code@flexion.org>  Fri, 23 Sep 2016 10:46:46 +0100
+  [ Mike Gabriel ]
+  * debian/changelog:
+    + Fix missing changelog items for 1.15.1-0ubuntu1 upload.
+  * debian/control:
+    + Dependencies updated for MATE 1.16.
+  * debian/watch:
+    + Update version matching again to _not_ support development releases.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 01 Oct 2016 16:07:35 +0200
 
 marco (1.15.0-0ubuntu1) yakkety; urgency=medium
 
