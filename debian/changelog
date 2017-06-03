@@ -1,3 +1,11 @@
+marco (1.16.1-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Fix strange window switching foreground/background behavior.
+      (Closes: #828077).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 03 Jun 2017 18:20:27 +0200
+
 marco (1.16.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
