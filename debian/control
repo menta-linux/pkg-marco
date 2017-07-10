@@ -30,7 +30,7 @@ Build-Depends: debhelper (>= 10.3~),
                mate-common (>= 1.18),
                yelp-tools,
                zenity,
-Standards-Version: 3.9.8
+Standards-Version: 4.0.0
 Homepage: http://www.mate-desktop.org/
 Vcs-Browser: https://anonscm.debian.org/git/pkg-mate/marco.git
 Vcs-Git: https://anonscm.debian.org/git/pkg-mate/marco.git
