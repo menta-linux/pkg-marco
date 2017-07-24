@@ -1,3 +1,6 @@
+Author: Martin Wimpress <martin.wimpress@ubuntu.com>
+Description: Disable the automatic scale handling, so that we can fully trust that window and monitor sizes reported by GDK and X11 always match.
+
 diff --git a/src/ui/ui.c b/src/ui/ui.c
 index 2c1747f..9ed9e8b 100644
 --- a/src/ui/ui.c

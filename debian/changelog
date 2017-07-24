@@ -7,6 +7,8 @@ marco (1.18.1-1) UNRELEASED; urgency=medium
   * debian/control: Dependencies updated for MATE 1.17.
   * debian/rules: Remove obsolete --with-gtk=3.0
   * debian/control: Dependencies updated for MATE 1.18.
+  * debian/patches:
+    + Add debian/patches/0000_no_scale.patch.
 
   [ Vangelis Mouhtsis ]
   * debian/compat:
