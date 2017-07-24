@@ -1,4 +1,4 @@
-marco (1.18.1-1) UNRELEASED; urgency=medium
+marco (1.18.1-1) unstable; urgency=medium
 
   [ Aron Xu ]
   * New upstream release.
@@ -20,7 +20,11 @@ marco (1.18.1-1) UNRELEASED; urgency=medium
   * debian/control:
     + Bump Standards-Version: to 4.0.0. No changes needed.
 
- -- Vangelis Mouhtsis <vangelis@gnugr.org>  Fri, 30 Jun 2017 17:48:57 +0300
+  [ Mike Gabriel ]
+  * debian/patches:
+    + Add patch header to 0000_no_scale.patch.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 24 Jul 2017 15:47:54 +0200
 
 marco (1.16.1-1) unstable; urgency=medium
 
