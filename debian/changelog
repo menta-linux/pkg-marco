@@ -1,9 +1,10 @@
-marco (1.18.1-2) UNRELEASED; urgency=medium
+marco (1.18.1-2) unstable; urgency=medium
 
+  [ Martin Wimpress ]
   * debian/patches:
     + Add 0001_fix_synthetic_keybindings.patch.
 
- -- Martin Wimpress <martin.wimpress@ubuntu.com>  Mon, 14 Aug 2017 10:35:13 +0100
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 22 Aug 2017 21:19:40 +0200
 
 marco (1.18.1-1) unstable; urgency=medium
 
