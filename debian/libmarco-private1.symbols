@@ -138,6 +138,7 @@ libmarco-private.so.1 libmarco-private1 #MINVER#
  meta_set_replace_current_wm@Base 1.6.2
  meta_set_verbose@Base 1.6.2
  meta_show_dialog@Base 1.6.2
+ meta_show_entry_dialog@Base 1.20.0
  meta_theme_calc_geometry@Base 1.6.2
  meta_theme_define_color_constant@Base 1.6.2
  meta_theme_define_float_constant@Base 1.6.2
