@@ -1,10 +1,10 @@
-marco (1.20.0-1) UNRELEASED; urgency=medium
+marco (1.20.0-0ubuntu1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 07 Feb 2018 14:03:55 +0000
 
-marco (1.19.2-1) UNRELEASED; urgency=medium
+marco (1.19.2-0ubuntu1) bionic; urgency=medium
 
   * New upstream release.
 
@@ -89,7 +89,7 @@ marco (1.16.0-1) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * debian/changelog:
-    + Fix missing changelog items for 1.15.1-1 upload.
+    + Fix missing changelog items for 1.15.1-0ubuntu1 upload.
   * debian/control:
     + Dependencies updated for MATE 1.16.
   * debian/watch:
@@ -97,7 +97,7 @@ marco (1.16.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 01 Oct 2016 16:07:35 +0200
 
-marco (1.15.0-1) yakkety; urgency=medium
+marco (1.15.0-0ubuntu1) yakkety; urgency=medium
 
   * New upstream development release.
   * debian/control:
