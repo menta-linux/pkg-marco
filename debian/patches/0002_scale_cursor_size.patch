@@ -1,0 +1,27 @@
+Author: Victor Kareh <vkareh@vkareh.net>
+Description: Scale cursor size for HiDPI
+
+diff --git a/src/core/prefs.c b/src/core/prefs.c
+index 021ad87..e376089 100644
+--- a/src/core/prefs.c
++++ b/src/core/prefs.c
+@@ -27,6 +27,7 @@
+ #include "prefs.h"
+ #include "ui.h"
+ #include "util.h"
++#include <gdk/gdk.h>
+ #include <gio/gio.h>
+ #include <string.h>
+ #include <stdlib.h>
+@@ -1097,7 +1098,10 @@ meta_prefs_get_cursor_theme (void)
+ int
+ meta_prefs_get_cursor_size (void)
+ {
+-  return cursor_size;
++  GdkWindow *window = gdk_get_default_root_window ();
++  gint scale = gdk_window_get_scale_factor (window);
++
++  return cursor_size * scale;
+ }
+ 
+ gboolean
