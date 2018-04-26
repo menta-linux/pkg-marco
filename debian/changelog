@@ -1,3 +1,14 @@
+marco (1.20.1-2) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/patches:
+    + Add 0001_fix_resize_popup.patch. Correct resize popup position on HiDPI
+      displays.
+    + Add 0002_prevent_xcursor_getting_stuck.patch. Fix frame geometry to
+      avoid stuck resize cursor.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 26 Apr 2018 22:55:07 +0200
+
 marco (1.20.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
