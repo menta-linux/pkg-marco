@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Marco
 Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
-Source: http://git.mate-desktop.org/marco/
+Source: https://git.mate-desktop.org/marco/
 
 Files: src/core/eventqueue.h
        src/core/frame-private.h
