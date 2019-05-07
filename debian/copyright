@@ -371,6 +371,7 @@ Files: .github/issue_template.md
        autogen.sh
        configure.ac
        rationales.txt
+       git.mk
 Copyright: *No Copyright*
 License: GPL-2+
 Comment:
