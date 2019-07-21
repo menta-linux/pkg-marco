@@ -1,3 +1,9 @@
+marco (1.22.2-1) unstable; urgency=medium
+
+  * Re-upload to unstable as is.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 21 Jul 2019 16:34:15 +0200
+
 marco (1.22.2-1~exp1) experimental; urgency=medium
 
   [ Martin Wimpress ]
