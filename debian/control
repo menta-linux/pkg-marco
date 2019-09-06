@@ -71,9 +71,11 @@ Depends: ${misc:Depends},
          ${shlibs:Depends},
 Breaks: libmarco,
         libmarco-private0,
+        libmarco-private1,
         mate-window-manager (<= 1.0.0-2),
 Replaces: libmarco,
           libmarco-private0,
+          libmarco-private1,
 Description: library for Marco window manager
  Marco is a small window manager, using GTK+ to do everything. It is
  developed mainly for the MATE Desktop.
