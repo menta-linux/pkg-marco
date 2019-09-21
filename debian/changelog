@@ -1,3 +1,9 @@
+marco (1.22.3-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Sat, 21 Sep 2019 22:18:06 +0200
+
 marco (1.22.2-1) unstable; urgency=medium
 
   * Re-upload to unstable as is.
