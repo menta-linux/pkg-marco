@@ -1,3 +1,12 @@
+marco (1.22.3-2) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/patches:
+    + Add 0001_scale_window_control_buttons.patch. Render window buttons a
+      cairo surfaces. (LP: #1773653)
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 23 Oct 2019 14:52:10 +0200
+
 marco (1.22.3-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
