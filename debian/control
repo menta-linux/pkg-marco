@@ -32,7 +32,7 @@ Build-Depends: debhelper-compat (=12),
                x11proto-present-dev,
                yelp-tools,
                zenity,
-Standards-Version: 4.4.1
+Standards-Version: 4.5.0
 Rules-Requires-Root: no
 Homepage: http://www.mate-desktop.org/
 Vcs-Browser: https://salsa.debian.org/debian-mate-team/marco
