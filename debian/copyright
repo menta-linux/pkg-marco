@@ -275,6 +275,12 @@ Copyright: 1986, 1998 The Open Group
            2002, Havoc Pennington
 License: MIT-OpenGroup
 
+Files: src/themes/Atlanta/*
+Copyright: 2002, Havoc Pennington <hp@redhat.com>
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
+
 Files: src/themes/ClearlooksRe/*
 Copyright: 2005-2007, Daniel Borgmann <daniel.borgmann@gmail.com>
            2005-2007, Andrea Cimitan <andrea.cimitan@gmail.com>
@@ -295,6 +301,32 @@ Files: src/themes/Dopple*
        src/themes/Spidey*
        src/themes/Splint*
 Copyright: 2009, Brandon Wright
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
+
+Files: src/themes/Esco/*
+Copyright: 2002, Havoc Pennington <hp@redhat.com>
+           2002, James M. Cape <jcape@ignore-your.tv>
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
+
+Files: src/themes/Gorilla/*
+Copyright: 2001, Ximian, Inc.
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
+
+Files: src/themes/Motif/*
+Copyright: 2007, Alexander Rokashevich
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
+
+Files: src/themes/Raleigh/*
+Copyright: 2007 Srivatsa Kanchi <srivatsa_nk@dataone.in>
+           2010 Perberos
 License: GPL-2+
 Comment:
  Using license from COPYING file.
@@ -337,32 +369,46 @@ Copyright: 2008, Thomas Thurman
 License: GFDL-1.2+
 
 Files: .github/issue_template.md
+       .github/FUNDING.yml
        .travis.yml
        .tx/config
        doc/man/Makefile.am
+       doc/man/meson.build
        doc/man/*.1
        doc/Makefile.am
+       doc/meson.build
        doc/creating_themes/Makefile.am
+       doc/creating_themes/meson.build
        doc/*.txt
+       its/marco-keybindings.its
+       its/marco-keybindings.loc
        makepot
+       meson.build
+       meson_options.txt
+       meson_post_install.py
+       po/Makevars
+       po/meson.build
        po/LINGUAS
        po/POTFILES.in
        po/POTFILES.skip
        src/tools/Makefile.am
+       src/tools/meson.build
        src/themes/Makefile.am
+       src/themes/meson.build
        src/wm-tester/Makefile.am
+       src/wm-tester/meson.build
        src/wm-tester/focus-window.c
        src/wm-tester/test-gravity.c
        src/wm-tester/test-resizing.c
        src/wm-tester/test-size-hints.c
        src/Makefile.am
+       src/meson.build
        src/*.xml.in
        src/*.pc.in
        src/*.desktop.in
        src/*.gschema.xml
        src/tools/*.png
        AUTHORS
-       COPYING
        ChangeLog
        HACKING
        Makefile.am
@@ -371,7 +417,6 @@ Files: .github/issue_template.md
        README.md
        autogen.sh
        configure.ac
-       rationales.txt
        git.mk
 Copyright: *No Copyright*
 License: GPL-2+
