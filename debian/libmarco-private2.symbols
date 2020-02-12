@@ -16,6 +16,7 @@ libmarco-private.so.2 libmarco-private2 #MINVER#
  meta_accel_label_new_with_mnemonic@Base 1.22.2
  meta_accel_label_set_accelerator@Base 1.22.2
  meta_alpha_gradient_spec_free@Base 1.22.2
+ meta_alpha_gradient_spec_get_mask@Base 1.24.0
  meta_alpha_gradient_spec_new@Base 1.22.2
  meta_bell_init@Base 1.22.2
  meta_bell_notify@Base 1.22.2
@@ -234,7 +235,6 @@ libmarco-private.so.2 libmarco-private2 #MINVER#
  meta_frames_set_title@Base 1.22.2
  meta_frames_unmanage_window@Base 1.22.2
  meta_frames_update_frame_style@Base 1.22.2
- meta_free_gslist_and_elements@Base 1.22.2
  meta_g_utf8_strndup@Base 1.22.2
  meta_gdk_pixbuf_get_from_pixmap@Base 1.22.2
  meta_get_display@Base 1.22.2
@@ -269,9 +269,11 @@ libmarco-private.so.2 libmarco-private2 #MINVER#
  meta_icon_cache_free@Base 1.22.2
  meta_icon_cache_get_icon_invalidated@Base 1.22.2
  meta_icon_cache_init@Base 1.22.2
+ meta_icon_cache_invalidate@Base 1.24.0
  meta_icon_cache_property_changed@Base 1.22.2
  meta_image_fill_type_from_string@Base 1.22.2
  meta_image_fill_type_to_string@Base 1.22.2
+ meta_invalidate_all_icons@Base 1.24.0
  meta_invalidate_default_icons@Base 1.22.2
  meta_is_debugging@Base 1.22.2
  meta_is_syncing@Base 1.22.2
@@ -287,8 +289,11 @@ libmarco-private.so.2 libmarco-private2 #MINVER#
  meta_prefs_get_action_double_click_titlebar@Base 1.22.2
  meta_prefs_get_action_middle_click_titlebar@Base 1.22.2
  meta_prefs_get_action_right_click_titlebar@Base 1.22.2
+ meta_prefs_get_allow_tile_cycling@Base 1.24.0
  meta_prefs_get_allow_tiling@Base 1.22.2
  meta_prefs_get_allow_top_tiling@Base 1.22.2
+ meta_prefs_get_alt_tab_expand_to_fit_title@Base 1.24.0
+ meta_prefs_get_alt_tab_max_columns@Base 1.24.0
  meta_prefs_get_application_based@Base 1.22.2
  meta_prefs_get_attach_modal_dialogs@Base 1.22.2
  meta_prefs_get_auto_raise@Base 1.22.2
@@ -304,6 +309,7 @@ libmarco-private.so.2 libmarco-private2 #MINVER#
  meta_prefs_get_focus_mode@Base 1.22.2
  meta_prefs_get_focus_new_windows@Base 1.22.2
  meta_prefs_get_force_fullscreen@Base 1.22.2
+ meta_prefs_get_icon_size@Base 1.24.0
  meta_prefs_get_key_bindings@Base 1.22.2
  meta_prefs_get_keybinding_action@Base 1.22.2
  meta_prefs_get_mate_accessibility@Base 1.22.2
@@ -384,7 +390,6 @@ libmarco-private.so.2 libmarco-private2 #MINVER#
  meta_rectangle_find_linepoint_closest_to_point@Base 1.22.2
  meta_rectangle_find_nonintersected_xinerama_edges@Base 1.22.2
  meta_rectangle_find_onscreen_edges@Base 1.22.2
- meta_rectangle_free_list_and_elements@Base 1.22.2
  meta_rectangle_get_minimal_spanning_set_for_region@Base 1.22.2
  meta_rectangle_horiz_overlap@Base 1.22.2
  meta_rectangle_intersect@Base 1.22.2
@@ -543,12 +548,16 @@ libmarco-private.so.2 libmarco-private2 #MINVER#
  meta_ui_set_current_theme@Base 1.22.2
  meta_ui_set_frame_title@Base 1.22.2
  meta_ui_tab_popup_backward@Base 1.22.2
+ meta_ui_tab_popup_down@Base 1.24.0
  meta_ui_tab_popup_forward@Base 1.22.2
  meta_ui_tab_popup_free@Base 1.22.2
  meta_ui_tab_popup_get_selected@Base 1.22.2
+ meta_ui_tab_popup_get_widget@Base 1.24.0
+ meta_ui_tab_popup_mouse_press@Base 1.24.0
  meta_ui_tab_popup_new@Base 1.22.2
  meta_ui_tab_popup_select@Base 1.22.2
  meta_ui_tab_popup_set_showing@Base 1.22.2
+ meta_ui_tab_popup_up@Base 1.24.0
  meta_ui_theme_get_frame_borders@Base 1.22.2
  meta_ui_unmap_frame@Base 1.22.2
  meta_ui_update_frame_style@Base 1.22.2
