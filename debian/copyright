@@ -368,7 +368,8 @@ Files: doc/creating_themes/C/index.docbook
 Copyright: 2008, Thomas Thurman
 License: GFDL-1.2+
 
-Files: .github/issue_template.md
+Files: .build.yml
+       .github/issue_template.md
        .github/FUNDING.yml
        .travis.yml
        .tx/config
