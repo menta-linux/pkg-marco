@@ -88,7 +88,7 @@ libmarco-private.so.2 libmarco-private2 #MINVER#
  meta_core_user_raise@Base 1.22.2
  meta_core_user_resize@Base 1.22.2
  meta_create_offscreen_window@Base 1.22.2
- meta_debug_spew_real@Base 1.22.2
+#MISSING: 1.26.0# meta_debug_spew_real@Base 1.22.2
  meta_display_begin_grab_op@Base 1.22.2
  meta_display_check_threshold_reached@Base 1.22.2
  meta_display_cleanup_edges@Base 1.22.2
@@ -175,8 +175,8 @@ libmarco-private.so.2 libmarco-private2 #MINVER#
  meta_error_trap_pop@Base 1.22.2
  meta_error_trap_pop_with_return@Base 1.22.2
  meta_error_trap_push@Base 1.22.2
- meta_event_detail_to_string@Base 1.22.2
- meta_event_mode_to_string@Base 1.22.2
+#MISSING: 1.26.0# meta_event_detail_to_string@Base 1.22.2
+#MISSING: 1.26.0# meta_event_mode_to_string@Base 1.22.2
  meta_event_queue_free@Base 1.22.2
  meta_event_queue_new@Base 1.22.2
  meta_exit@Base 1.22.2
@@ -282,7 +282,7 @@ libmarco-private.so.2 libmarco-private2 #MINVER#
  meta_parse_position_expression@Base 1.22.2
  meta_parse_size_expression@Base 1.22.2
  meta_pop_no_msg_prefix@Base 1.22.2
- meta_preference_to_string@Base 1.22.2
+#MISSING: 1.26.0# meta_preference_to_string@Base 1.22.2
  meta_prefs_add_listener@Base 1.22.2
  meta_prefs_bell_is_audible@Base 1.22.2
  meta_prefs_change_workspace_name@Base 1.22.2
@@ -513,7 +513,7 @@ libmarco-private.so.2 libmarco-private2 #MINVER#
  meta_tile_preview_hide@Base 1.22.2
  meta_tile_preview_new@Base 1.22.2
  meta_tile_preview_show@Base 1.22.2
- meta_topic_real@Base 1.22.2
+#MISSING: 1.26.0# meta_topic_real@Base 1.22.2
  meta_ui_accelerator_name@Base 1.22.2
  meta_ui_add_event_func@Base 1.22.2
  meta_ui_apply_frame_shape@Base 1.22.2
@@ -528,7 +528,9 @@ libmarco-private.so.2 libmarco-private2 #MINVER#
  meta_ui_get_drag_threshold@Base 1.22.2
  meta_ui_get_frame_borders@Base 1.22.2
  meta_ui_get_frame_bounds@Base 1.22.2
+ meta_ui_get_mini_icon_from_name@Base 1.26.0
  meta_ui_get_pixbuf_from_surface@Base 1.22.2
+ meta_ui_get_window_icon_from_name@Base 1.26.0
  meta_ui_have_a_theme@Base 1.22.2
  meta_ui_init@Base 1.22.2
  meta_ui_map_frame@Base 1.22.2
@@ -568,7 +570,7 @@ libmarco-private.so.2 libmarco-private2 #MINVER#
  meta_ui_window_should_not_cause_focus@Base 1.22.2
  meta_unsigned_long_equal@Base 1.22.2
  meta_unsigned_long_hash@Base 1.22.2
- meta_verbose_real@Base 1.22.2
+#MISSING: 1.26.0# meta_verbose_real@Base 1.22.2
  meta_warning@Base 1.22.2
  meta_window_activate@Base 1.22.2
  meta_window_activate_with_workspace@Base 1.22.2
@@ -611,9 +613,11 @@ libmarco-private.so.2 libmarco-private2 #MINVER#
  meta_window_get_screen@Base 1.22.2
  meta_window_get_startup_id@Base 1.22.2
  meta_window_get_transient_for@Base 1.22.2
+ meta_window_get_type@Base 1.26.0
  meta_window_get_work_area_all_xineramas@Base 1.22.2
  meta_window_get_work_area_current_xinerama@Base 1.22.2
  meta_window_get_work_area_for_xinerama@Base 1.22.2
+ meta_window_get_workspace@Base 1.26.0
  meta_window_get_workspaces@Base 1.22.2
  meta_window_get_xor_rect@Base 1.22.2
  meta_window_get_xwindow@Base 1.22.2
@@ -626,6 +630,8 @@ libmarco-private.so.2 libmarco-private2 #MINVER#
  meta_window_is_client_decorated@Base 1.22.2
  meta_window_is_maximized@Base 1.22.2
  meta_window_is_shaded@Base 1.22.2
+ meta_window_is_tiled_left@Base 1.26.0
+ meta_window_is_tiled_right@Base 1.26.0
  meta_window_kill@Base 1.22.2
  meta_window_located_on_workspace@Base 1.22.2
  meta_window_lookup_saved_state@Base 1.22.2
