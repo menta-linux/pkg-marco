@@ -1,8 +1,22 @@
-marco (1.26.0-1) UNRELEASED; urgency=medium
+marco (1.26.0-1) unstable; urgency=medium
 
+  [ Martin Wimpress ]
   * New upstream release.
+  * debian/*.symbols:
+    + Dependencies updated for MATE 1.26.
+  * debian/patches:
+    + Drop 0002_tabpopup-fix-cairo-surface-leak.patch. Applied upstream.
+    + Drop 0001_no-shadows-for-side-tiled-windows.patch. Applied upstream.
 
- -- Martin Wimpress <code@wimpress.io>  Sat, 21 Aug 2021 18:01:43 +0100
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.6.0. No changes needed.
+  * debian/watch:
+    + Use format version 4.
+  * debian/libmarco-private2.lintian-overrides:
+    + Rename shlib-calls-exit to exit-in-shared-library.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 11 Dec 2021 02:28:33 +0100
 
 marco (1.24.1-3) unstable; urgency=medium
 
