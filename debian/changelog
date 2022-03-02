@@ -1,3 +1,13 @@
+marco (1.26.0-2) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/control:
+    + Drop B-D: libxpresent-dev. (LP: #1960621)
+  * debian/patches:
+    + Add 0000_shadows.patch: Consistent radius and opacity for shadows.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 02 Mar 2022 13:25:55 +0100
+
 marco (1.26.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
