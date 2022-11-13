@@ -1,8 +1,18 @@
-marco (1.26.1-1) UNRELEASED; urgency=medium
+marco (1.26.1-1) unstable; urgency=medium
 
   * New upstream release.
+  * debian/patches:
+    + Add 1001_marco-Add-cmdline-option-no-keybindings-for-disablin.patch.
+      Add cmdline option --no-keybindings for disabling key bindings
+      directly on WM startup.
+  * debian/control:
+    + Add B-D: libxres-dev.
+    + Bump Standards-Version: to 4.6.1. No changes needed.
+  * debian/copyright:
+    + Update attributions for debian/.
+  * lintian: Update tag syntax.
 
- -- Mike Gabriel <sunweaver@debian.org>  Sun, 13 Nov 2022 21:06:36 +0100
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 13 Nov 2022 21:28:36 +0100
 
 marco (1.26.0-2) unstable; urgency=medium
 
