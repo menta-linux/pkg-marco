@@ -33,7 +33,7 @@ Build-Depends: autoconf-archive,
                x11proto-present-dev,
                yelp-tools,
                zenity,
-Standards-Version: 4.6.0
+Standards-Version: 4.6.1
 Rules-Requires-Root: no
 Homepage: http://www.mate-desktop.org/
 Vcs-Browser: https://salsa.debian.org/debian-mate-team/marco
