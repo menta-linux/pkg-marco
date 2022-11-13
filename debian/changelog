@@ -1,3 +1,9 @@
+marco (1.26.1-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 13 Nov 2022 21:06:36 +0100
+
 marco (1.26.0-2) unstable; urgency=medium
 
   [ Martin Wimpress ]
