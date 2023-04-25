@@ -1,3 +1,6 @@
 
 0000_shadows.patch
 1001_marco-Add-cmdline-option-no-keybindings-for-disablin.patch
+0001_test-retval-from-XResQueryClientIds.patch
+0002_test-xres-1.2-is-present.patch
+0003_test-if-XResQueryClientIds-is-available.patch

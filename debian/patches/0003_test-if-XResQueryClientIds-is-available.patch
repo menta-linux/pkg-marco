@@ -1,0 +1,23 @@
+From 6cc8a2ff1e80d55d8edd7cd9c605bd068e83a72b Mon Sep 17 00:00:00 2001
+From: Joakim Tjernlund <joakim.tjernlund@infinera.com>
+Date: Thu, 29 Dec 2022 14:51:57 +0100
+Subject: [PATCH] Test if XResQueryClientIds() is available before using it.
+
+Needed for X2Go as it does not have XRES 1.2 extension.
+---
+ src/core/window-props.c | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/src/core/window-props.c b/src/core/window-props.c
+index b27809ab4..06df9e660 100644
+--- a/src/core/window-props.c
++++ b/src/core/window-props.c
+@@ -305,6 +305,8 @@ get_local_pid (MetaWindow *window)
+   long i;
+ 
+   pid = -1;
++  if (window->display->have_xres == FALSE)
++    return pid;
+ 
+   spec.client = window->xwindow;
+   spec.mask = XRES_CLIENT_ID_PID_MASK;
