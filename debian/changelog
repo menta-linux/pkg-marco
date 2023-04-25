@@ -1,3 +1,16 @@
+marco (1.26.1-2) unstable; urgency=medium
+
+  * debian/patches:
+    + Add patches 0001, 0002 and 0003. Fixes marco crashing when run in an X2Go
+      session. (Closes: #1034677).
+  * debian/{marco-common.install,20_marco-debian.gschema.override}:
+    + Disable compositing manager in marco, hides dark border around windows in
+      X2Go. (Closes: #982879). This also works around screen tearing in MATE
+      desktop when installing MATE in Debian with default settings. (Closes:
+      #1034605).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 25 Apr 2023 15:49:34 +0200
+
 marco (1.26.1-1) unstable; urgency=medium
 
   * New upstream release.
