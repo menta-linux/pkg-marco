@@ -1,3 +1,13 @@
+marco (1.26.1-3) unstable; urgency=medium
+
+  * Revert "debian/control: Drop B-D: libxpresent-dev." introduced with
+    marco 1.26.0-2.
+    The underlying cause of the problem (see Launchpad issue #1960621) has
+    long been solved in X.org's present extension. (This really closes:
+    #1034605).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 26 Apr 2023 07:46:12 +0200
+
 marco (1.26.1-2) unstable; urgency=medium
 
   * debian/patches:
