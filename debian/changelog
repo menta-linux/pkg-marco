@@ -1,8 +1,16 @@
-marco (1.26.2-1) UNRELEASED; urgency=medium
+marco (1.26.2-1) unstable; urgency=medium
 
   * New upstream release.
+    - Fix window titles sometimes shown incorrectly when owned as root.
+      This affects mostly KDE apps if they are run on MATE. (Closes:
+      #1040752)
+  * debian/patches: Drop patches 0001, 0002 and 0003. Applied upstream.
+  * debian/control:
+    + Bump Standards-Version: to 4.6.2. No changes needed.
+  * debian/copyright:
+    + Update copyright attribution for debian/ folder.
 
- -- Mike Gabriel <sunweaver@debian.org>  Mon, 10 Jul 2023 06:15:30 +0200
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 10 Jul 2023 06:16:29 +0200
 
 marco (1.26.1-3) unstable; urgency=medium
 
