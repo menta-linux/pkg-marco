@@ -1,3 +1,14 @@
+marco (1.26.2-4) unstable; urgency=medium
+
+  * debian/:
+    + Drop black-frame-in-X2Go-sessions-workaround, re-enable compositing by
+      default again. This drops the gsettings override
+      20_marco-debian.gschema.override.
+  * debian/libmarco-private2.symbols:
+    + Update symbols.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 19 Aug 2023 22:36:05 +0200
+
 marco (1.26.2-3) unstable; urgency=medium
 
   * debian/rules:
