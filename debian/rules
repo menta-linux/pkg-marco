@@ -23,6 +23,7 @@ override_dh_auto_configure:
 	# upstream tarball is without configure. autogen.sh will create it
 	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure $(DHFLAGS) -- \
+		--enable-verbose-mode \
 		--disable-silent-rules \
 		--localstatedir=/var \
 		--libexecdir=/usr/lib/mate-window-manager \
