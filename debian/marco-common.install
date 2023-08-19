@@ -5,4 +5,3 @@ usr/share/marco/
 usr/share/mate-control-center/
 usr/share/mate/
 usr/share/themes/
-debian/20_marco-debian.gschema.override usr/share/glib-2.0/schemas/
