@@ -1,3 +1,27 @@
+marco (1.26.2-2) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 0001_check-availability-of-compositing-1.patch and
+      0002_check-availability-of-compositing-2.patch. Check that compositing
+      is not only requested, but also available.
+
+      Enabling code that is supposed to be used in compositing conditions is
+      harmful if compositing is not actually available. Just checking the
+      preference is not enough to make sure that compositing is available -
+      the X server might be missing crucial extensions for compositing to
+      work, which in turn correctly disables the internal compositor.
+
+      The end result is graphical issues like black borders around windows in
+      such situations.
+
+      Make sure that compositing is both requested AND available to fix this
+      bug.
+
+      This resolves an annoying issue when running MATE desktop in X2Go
+      sessions with the x2goagent (nx-libs) Xserver backend.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 19 Aug 2023 21:31:53 +0200
+
 marco (1.26.2-1) unstable; urgency=medium
 
   * New upstream release.
