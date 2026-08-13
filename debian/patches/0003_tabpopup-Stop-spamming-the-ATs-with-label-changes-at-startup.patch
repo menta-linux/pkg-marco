@@ -7,8 +7,6 @@ Subject: [PATCH] tabpopup: Stop spamming the ATs with label changes at startup
  src/ui/tabpopup.c | 16 +++++++++-------
  1 file changed, 9 insertions(+), 7 deletions(-)
 
-diff --git a/src/ui/tabpopup.c b/src/ui/tabpopup.c
-index abd37b6d..892de65b 100644
 --- a/src/ui/tabpopup.c
 +++ b/src/ui/tabpopup.c
 @@ -36,6 +36,7 @@
@@ -19,7 +17,7 @@ index abd37b6d..892de65b 100644
  #include <gdk/gdkx.h>
  #include <math.h>
  
-@@ -70,6 +71,14 @@ struct _MetaTabPopup
+@@ -70,6 +71,14 @@
    gint border;
  };
  
@@ -34,7 +32,7 @@ index abd37b6d..892de65b 100644
  static GtkWidget* selectable_image_new (GdkPixbuf *pixbuf, cairo_surface_t *win_surface);
  static void       select_image         (GtkWidget *widget);
  static void       unselect_image       (GtkWidget *widget);
-@@ -79,6 +88,65 @@ static GtkWidget* selectable_workspace_new (MetaWorkspace *workspace,
+@@ -79,6 +88,65 @@
  static void       select_workspace         (GtkWidget *widget);
  static void       unselect_workspace       (GtkWidget *widget);
  
@@ -100,7 +98,7 @@ index abd37b6d..892de65b 100644
  static gboolean
  outline_window_draw (GtkWidget *widget,
                       cairo_t   *cr,
-@@ -285,7 +353,7 @@ meta_ui_tab_popup_new (const MetaTabEntry *entries,
+@@ -278,7 +346,7 @@
    else
      popup->outline_window = NULL;
  
@@ -109,7 +107,7 @@ index abd37b6d..892de65b 100644
  
    gtk_window_set_screen (GTK_WINDOW (popup->window), screen);
    gtk_window_set_position (GTK_WINDOW (popup->window), GTK_WIN_POS_CENTER_ALWAYS);
-@@ -340,13 +408,6 @@ meta_ui_tab_popup_new (const MetaTabEntry *entries,
+@@ -334,13 +402,6 @@
  
    popup->label = gtk_label_new ("");
  
@@ -123,7 +121,7 @@ index abd37b6d..892de65b 100644
    gtk_widget_set_margin_start (popup->label, 16);
    gtk_widget_set_margin_end (popup->label, 16);
    gtk_widget_set_margin_top (popup->label, 0);
-@@ -421,6 +482,15 @@ meta_ui_tab_popup_new (const MetaTabEntry *entries,
+@@ -415,6 +476,15 @@
    /* Make it so that we ellipsize if the text is too long */
    gtk_label_set_ellipsize (GTK_LABEL (popup->label), PANGO_ELLIPSIZE_END);
  
