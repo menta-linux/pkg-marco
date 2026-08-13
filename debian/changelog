@@ -1,3 +1,25 @@
+marco (1.26.2-5) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Add to D: (marco) mate-settings-daemon-common. (Ships gsettings schemas
+      used by marco).
+    + Drop from B-D: intltool, add gettext.
+    + Bump Standards-Version: to 4.7.4. Drop Priority: optional from global
+      header.
+  * debian/patches:
+    + Add 0003_tabpopup-Stop-spamming-the-ATs-with-label-changes-at-
+      startup.patch as proposed by upstream.
+  * debian/copyright:
+    + Update copyright attribution for debian/.
+
+  [ Jeremyp3 ]
+  * debian/patches:
+    + Rebase 0003_tabpopup-Stop-spamming-the-ATs-with-label-changes-at-
+      startup.patch to apply against marco 1.26.2. (Closes: #1101701).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 13 Aug 2026 15:45:41 +0200
+
 marco (1.26.2-4) unstable; urgency=medium
 
   * debian/:
