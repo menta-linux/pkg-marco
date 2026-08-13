@@ -2,4 +2,5 @@
 1001_marco-Add-cmdline-option-no-keybindings-for-disablin.patch
 0001_check-availability-of-compositing-1.patch
 0002_check-availability-of-compositing-2.patch
+2000_use-y2k38-unsafe-startup-notification-api.patch
 0003_tabpopup-Stop-spamming-the-ATs-with-label-changes-at-startup.patch
