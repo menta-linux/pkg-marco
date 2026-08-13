@@ -45,6 +45,7 @@ Architecture: any
 Depends: libmarco-private2 (= ${binary:Version}),
          marco-common (= ${source:Version}),
          mate-desktop-common (>= 1.24),
+         mate-settings-daemon-common (>= 1.24),
          zenity,
          ${misc:Depends},
          ${shlibs:Depends},
