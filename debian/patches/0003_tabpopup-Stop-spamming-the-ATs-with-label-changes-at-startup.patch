@@ -1,0 +1,43 @@
+From 2d3cec67ab41e70479d75beb5f884e1a4551ea92 Mon Sep 17 00:00:00 2001
+From: Colomban Wendling <cwendling@hypra.fr>
+Date: Wed, 21 Feb 2024 19:13:36 +0100
+Subject: [PATCH] tabpopup: Stop spamming the ATs with label changes at startup
+
+---
+ src/ui/tabpopup.c | 16 +++++++++-------
+ 1 file changed, 9 insertions(+), 7 deletions(-)
+
+diff --git a/src/ui/tabpopup.c b/src/ui/tabpopup.c
+index 9f0cc236..892de65b 100644
+--- a/src/ui/tabpopup.c
++++ b/src/ui/tabpopup.c
+@@ -408,13 +408,6 @@ meta_ui_tab_popup_new (const MetaTabEntry *entries,
+ 
+   popup->label = gtk_label_new ("");
+ 
+-  /* Set the accessible role of the label to a status bar so it
+-   * will emit name changed events that can be used by screen
+-   * readers.
+-   */
+-  obj = gtk_widget_get_accessible (popup->label);
+-  atk_object_set_role (obj, ATK_ROLE_STATUSBAR);
+-
+   gtk_widget_set_margin_start (popup->label, 16);
+   gtk_widget_set_margin_end (popup->label, 16);
+   gtk_widget_set_margin_top (popup->label, 0);
+@@ -489,6 +482,15 @@ meta_ui_tab_popup_new (const MetaTabEntry *entries,
+   /* Make it so that we ellipsize if the text is too long */
+   gtk_label_set_ellipsize (GTK_LABEL (popup->label), PANGO_ELLIPSIZE_END);
+ 
++  /* Set the accessible role of the label to a status bar so it
++   * will emit name changed events that can be used by screen
++   * readers.
++   * We do this *after* messing with the label content for computing the size
++   * not to send a change even for each entry at start.
++   */
++  obj = gtk_widget_get_accessible (popup->label);
++  atk_object_set_role (obj, ATK_ROLE_STATUSBAR);
++
+   int default_window_width = 0; /* 0 == small as possible, truncate label */
+ 
+   if (expand_for_titles && top <= 1 && left < width)
