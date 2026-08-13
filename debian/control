@@ -1,6 +1,5 @@
 Source: marco
 Section: x11
-Priority: optional
 Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
@@ -34,7 +33,7 @@ Build-Depends: autoconf-archive,
                x11proto-present-dev,
                yelp-tools,
                zenity,
-Standards-Version: 4.6.2
+Standards-Version: 4.7.4
 Rules-Requires-Root: no
 Homepage: http://www.mate-desktop.org/
 Vcs-Browser: https://salsa.debian.org/debian-mate-team/marco
