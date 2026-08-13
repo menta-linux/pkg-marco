@@ -1,3 +1,10 @@
+marco (1.26.2-6) unstable; urgency=medium
+
+  * Re-upload 1.26.2-5 as is but bringing back NMU changes from
+    1.26.2-4.1.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 13 Aug 2026 16:00:48 +0200
+
 marco (1.26.2-5) unstable; urgency=medium
 
   [ Mike Gabriel ]
