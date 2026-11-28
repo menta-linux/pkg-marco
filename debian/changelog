@@ -1,3 +1,17 @@
+marco (1.29.1-1menta1) unstable; urgency=medium
+
+  * Menta Linux rebuild: new upstream release 1.29.1.
+  * debian/patches: drop 0001, 0002, 0003 and 1001 (already in upstream
+    1.29.1).
+  * debian/watch: Track GitHub releases.
+  * debian/libmarco-private2.symbols: Add three prefs and two desktop-id
+    icon symbols, drop the two *_from_name icon symbols replaced
+    upstream (private library, soname unchanged).
+  * debian/control: Build-Depend on libmate-desktop-dev (>= 1.27.1),
+    required by upstream 1.29.1.
+
+ -- Menta Linux <packages@menta-linux.invalid>  Sun, 15 Nov 2026 00:16:23 -0700
+
 marco (1.26.2-6) unstable; urgency=medium
 
   * Re-upload 1.26.2-5 as is but bringing back NMU changes from

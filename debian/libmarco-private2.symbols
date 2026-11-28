@@ -528,9 +528,7 @@ libmarco-private.so.2 libmarco-private2 #MINVER#
  meta_ui_get_drag_threshold@Base 1.22.2
  meta_ui_get_frame_borders@Base 1.22.2
  meta_ui_get_frame_bounds@Base 1.22.2
- meta_ui_get_mini_icon_from_name@Base 1.26.0
  meta_ui_get_pixbuf_from_surface@Base 1.22.2
- meta_ui_get_window_icon_from_name@Base 1.26.0
  meta_ui_have_a_theme@Base 1.22.2
  meta_ui_init@Base 1.22.2
  meta_ui_map_frame@Base 1.22.2
@@ -724,3 +722,8 @@ libmarco-private.so.2 libmarco-private2 #MINVER#
  shadow_offsets_x@Base 1.22.2
  shadow_offsets_y@Base 1.22.2
  wnck_draw_workspace@Base 1.22.2
+ meta_prefs_get_action_scroll_down_titlebar@Base 1.29.1
+ meta_prefs_get_action_scroll_up_titlebar@Base 1.29.1
+ meta_prefs_get_alt_tab_raise_windows@Base 1.29.1
+ meta_ui_get_mini_icon_from_desktop_id@Base 1.29.1
+ meta_ui_get_window_icon_from_desktop_id@Base 1.29.1
